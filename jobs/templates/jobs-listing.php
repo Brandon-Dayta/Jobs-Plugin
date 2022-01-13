@@ -269,7 +269,7 @@ foreach ($search_terms as $search_term) {
 									data-city-id="<?php echo $ci_term->term_id; ?>"
 									data-filter-name="<?php echo htmlspecialchars($ci_term->name, ENT_QUOTES); ?>
 								 ">
-								 <a onclick="sessionStorage.city_filters=<?php echo $ci_term->term_id; ?>; document.location='#results';return false;"  href="#"><?php echo $ci_term->name . ' (' . $ci_term->total . ')'; ?></a>
+								 <a onclick="document.location='#results';return false;"  href="#"><?php echo $ci_term->name . ' (' . $ci_term->total . ')'; ?></a>
 								</li>
 							<?php endforeach; ?>
 							</ul>
