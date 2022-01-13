@@ -37,6 +37,7 @@ jQuery(document).ready(function($) {
 	var sfilters = JSON.stringify(source_filters);
 
 	//initial page load
+	e.preventDefault();
 	$.ajax({
 		url: jfs_vars.ajaxurl,
 		type: 'post',
