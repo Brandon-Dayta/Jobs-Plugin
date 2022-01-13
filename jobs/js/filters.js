@@ -12,7 +12,6 @@ jQuery(document).ready(function($) {
 	var source_filters = [];
 	var type_filters = [];
 	var city_filters = [];
-	var city_filters = sessionStorage.city_filters;
 	var offset;
 	var page_number;
 	var featured = $('#hidden_featured').val();
@@ -45,7 +44,6 @@ jQuery(document).ready(function($) {
 			action         : 'show_filtered_jobs',
 			security       : jfs_vars.security,
 			dataType       : 'html',
-			city_filters   : sessionStorage.city_filters, 
 			city_filters   : cifilters,
 			company_filters: cfilters,
 			type_filters   : tfilters,
